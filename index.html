@@ -77,10 +77,20 @@
             <tr>
                 <td>姓名</td>
                 <td><input type="text" id="name"></td>
-                <td>身分證字號</td>
-                <td><input type="text"></td>
-                <td>公司行號<br>名稱</td>
-                <td colspan="3">    
+                <td>性別</td>
+                <td>    
+                    <select>
+                        <option value="" disabled="" selected=""></option>
+                        <option value="male">男性</option>
+                        <option value="female">女性</option>
+                    </select>
+                </td>
+                <td colspan="4">公司行號<br>名稱</td>
+            </tr>
+            <tr>
+                <td colspan="2">身分證字號</td>
+                <td colspan="2"><input type="text"></td>
+                <td colspan="4">    
                     <select id="companySelect";font-size:13px>
                         <option value="" disabled="" selected=""></option>
                         <option value="宜蘭分公司">元健大和直販事業股份有限公司宜蘭分公司</option>
@@ -105,16 +115,8 @@
                 </td>
             </tr>
             <tr>
-                <td>性別</td>
-                <td>    
-                    <select>
-                        <option value="" disabled="" selected=""></option>
-                        <option value="male">男性</option>
-                        <option value="female">女性</option>
-                    </select>
-                </td>
-                <td>出生年月日</td>
-                <td><input type="text"></td>
+                <td colspan="2">出生年月日</td>
+                <td colspan="2"><input type="text"></td>
                 <td>統一編號</td>
                 <td><span id="companyTaxID"></span></td>
                 <td>負責人</td>
