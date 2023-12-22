@@ -846,10 +846,20 @@
             // 生成 PDF 文件名
             const pdfFileName = `${userName}-助聽器保固書.pdf`;
 
+            const pdfOptions = {
+                    margin: 5, // 设置页边距，单位是毫米
+                    filename: pdfFileName,
+                    html2canvas: { scale: 2 }, // 设置html2canvas的缩放比例
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // 设置jsPDF的单位、页面格式和方向
+            };
+
+
             html2pdf()
                 .from(element)
+        .set(pdfOptions) // 应用设置
                 .save(pdfFileName);
         });
+
 
 
     const companySelect = document.getElementById("companySelect");
