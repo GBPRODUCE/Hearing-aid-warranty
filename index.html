@@ -827,36 +827,36 @@
     </tr>
 
     <tr>
-        <td rowspan="2"> <br>供應商<br> <br>用印處<br> </td>
+        <td rowspan="2">供應商<br> <br>用印處</td>
         <td rowspan="2" colspan="7"></td>
     </tr>
 
 </tbody></table>
 
-<button id="downloadBtn">下載PDF</button>
+<button id="downloadBtn">下載PDF檔案</button>
 
 <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
 <script>
     document.getElementById("downloadBtn").addEventListener("click", function () {
         const element = document.querySelector("table");
         
-            // 获取用户输入的姓名
-            const userName = document.getElementById("name").value; // 假设姓名输入框的 id 是 "name"
+            // 獲取用戶輸入的姓名
+            const userName = document.getElementById("name").value; // 假設姓名輸入框的 id 是 "name"
 
             // 生成 PDF 文件名
             const pdfFileName = `${userName}-助聽器保固書.pdf`;
 
             const pdfOptions = {
-                    margin: 5, // 设置页边距，单位是毫米
+                    margin: 5, // 設置頁邊距，單位是毫米
                     filename: pdfFileName,
-                    html2canvas: { scale: 2 }, // 设置html2canvas的缩放比例
-                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // 设置jsPDF的单位、页面格式和方向
+                    html2canvas: { scale: 2 }, // 設置html2canvas的縮放比例
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // 設置jsPDF的單位、頁面格式和方向
             };
 
 
             html2pdf()
                 .from(element)
-        .set(pdfOptions) // 应用设置
+                .set(pdfOptions) // 應用設置
                 .save(pdfFileName);
         });
 
