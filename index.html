@@ -53,6 +53,10 @@
     input[type="date"], input[type="text"] {
         width: 20%;
     }
+    label {
+            display: block;
+            margin-bottom: 10px;
+        }
 </style>
 </head>
 <body>
@@ -68,11 +72,12 @@
                 <td><input type="text" id="name"></td>
                 <td>性別</td>
                 <td>    
-                    <select>
-                        <option value="" disabled="" selected=""></option>
-                        <option value="male">男性</option>
-                        <option value="female">女性</option>
-                    </select>
+                    <label>
+                        <input type="checkbox" name="exampleCheckbox">男性
+                    </label>
+                    <label>
+                        <input type="checkbox" name="exampleCheckbox">男性
+                    </label>
                 </td>
                 <td colspan="4">公司行號名稱</td>
             </tr>
