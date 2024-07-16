@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl35e027dbc3a9bbead28901efeb12f17b">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <title>助聽器保固書</title>
 <style>
     table {
@@ -103,7 +106,7 @@
             </tr>
             <tr>
                 <td colspan="1">出生年月日</td>
-                <td colspan="3"><input type="text"></td>
+                <td colspan="3"><input type="text" class="roc-datepicker"></td>
                 <td>統一編號</td>
                 <td><span id="companyTaxID"></span></td>
                 <td>負責人</td>
@@ -707,16 +710,16 @@
     <tr>
         <td rowspan="3">保固期間</td>
         <td>起始日期</td>
-        <td colspan="2"><input type="text"></td>
+        <td colspan="2"><input type="text" class="roc-datepicker"></td>
         <td rowspan="3">保固期間</td>
         <td>起始日期</td>
-        <td colspan="2"><input type="text"></td>
+        <td colspan="2"><input type="text" class="roc-datepicker"></td>
     </tr>
     <tr>
         <td>截止日期</td>
-        <td colspan="2"><input type="text"></td>
+        <td colspan="2"><input type="text" class="roc-datepicker"></td>
         <td>截止日期</td>
-        <td colspan="2"><input type="text"></td>
+        <td colspan="2"><input type="text" class="roc-datepicker"></td>
     </tr>
     <tr>
         <td colspan="3"><span id="LwarrantyPeriod"></span></td>
@@ -1546,4 +1549,32 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Rbrand.textContent = 
             RotherSpec.textContent = "";
         }
     });
-</script></body></html>
+</script>
+    <script>
+        $(function() {
+            $(".roc-datepicker").datepicker({
+                dateFormat: 'yy/mm/dd',
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '-113:+20',
+                beforeShow: function(input, inst) {
+                    inst.dpDiv.css({
+                        marginTop: -input.offsetHeight + 'px',
+                        marginLeft: input.offsetWidth + 'px'
+                    });
+                },
+                onSelect: function(dateText) {
+                    const [year, month, day] = dateText.split('/');
+                    const rocYear = (parseInt(year) - 1911).toString();
+                    $(this).val(`${rocYear}年${month}月${day}日`);
+                }
+            }).focus(function() {
+                const dateStr = $(this).val();
+                if (dateStr) {
+                    const [rocYear, month, day] = dateStr.split('年').map(part => part.replace(/月|日/g, ''));
+                    const year = (parseInt(rocYear) + 1911).toString();
+                    $(this).datepicker('setDate', `${year}/${month}/${day}`);
+                }
+            });
+        });
+    </script></body></html>
