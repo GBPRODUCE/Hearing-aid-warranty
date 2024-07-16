@@ -4,10 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl35e027dbc3a9bbead28901efeb12f17b">
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-        <title>助聽器保固書</title>
+
+        <!-- 民國日期選擇器調用 -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        
+    <title>助聽器保固書</title>
 <style>
     table {
         border-collapse: collapse;
@@ -824,36 +827,37 @@
 
 </tbody></table>
 
+<!-- PDF設置 -->
 <button id="downloadBtn">下載PDF檔案</button>
 
-<script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
-<script>
-    document.getElementById("downloadBtn").addEventListener("click", function () {
-        const element = document.querySelector("table");
+    <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const element = document.querySelector("table");
 
-        // 獲取用戶輸入的姓名
-        const userName = document.getElementById("name").value; // 假設姓名輸入框的 id 是 "name"
+            // 獲取用戶輸入的姓名
+            const userName = document.getElementById("name").value; // 假設姓名輸入框的 id 是 "name"
 
-        // 生成 PDF 文件名
-        const pdfFileName = `${userName}-助聽器保固書.pdf`;
+            // 生成 PDF 文件名
+            const pdfFileName = `${userName}-助聽器保固書.pdf`;
 
-        const pdfOptions = {
-            margin: [10, 10, 10, 10], // 設置頁邊距，單位是毫米，設置為陣列以定義不同的邊距
-            filename: pdfFileName,
-            image: { type: 'jpeg', quality: 0.98 }, // 設置圖片格式和質量
-            html2canvas: { scale: 2, useCORS: true }, // 設置html2canvas的縮放比例和使用CORS
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // 設置jsPDF的單位、頁面格式和方向
-        };
+            const pdfOptions = {
+                margin: [10, 10, 10, 10], // 設置頁邊距，單位是毫米，設置為陣列以定義不同的邊距
+                filename: pdfFileName,
+                image: { type: 'jpeg', quality: 0.98 }, // 設置圖片格式和質量
+                html2canvas: { scale: 2, useCORS: true }, // 設置html2canvas的縮放比例和使用CORS
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // 設置jsPDF的單位、頁面格式和方向
+            };
 
-        html2pdf()
-            .from(element)
-            .set(pdfOptions) // 應用設置
-            .save();
-    });
-</script>
+            html2pdf()
+                .from(element)
+                .set(pdfOptions) // 應用設置
+                .save();
+        });
+    </script>
 
 
-
+<!-- 分公司清單 -->
 <script>
 
     const companySelect = document.getElementById("companySelect");
@@ -963,7 +967,7 @@
 
 
 <script>
-
+<!-- 左耳HA定義 -->
     const LmodelSelect = document.getElementById("LmodelSelect");
     const Lbrand = document.getElementById("Lbrand");
     const LlicenseNumber = document.getElementById("LlicenseNumber");
@@ -1257,6 +1261,8 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Lbrand.textContent = 
             LotherSpec.textContent = "";
         }
     });
+
+    <!-- 右耳HA定義 -->
     const RmodelSelect = document.getElementById("RmodelSelect");
     const Rbrand = document.getElementById("Rbrand");
     const RlicenseNumber = document.getElementById("RlicenseNumber");
@@ -1551,6 +1557,8 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Rbrand.textContent = 
         }
     });
 </script>
+    
+    <!-- 民國日期選擇器 -->
     <script>
         $(function() {
             $(".roc-datepicker").datepicker({
