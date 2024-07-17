@@ -65,12 +65,6 @@
         white-space: pre-wrap;
     }
 
-    #downloadBtn {
-        display: block;
-        margin: 0 auto;
-        font-size: 20px;
-        padding: 5px 10px;
-    }
 
     select, input[type="date"], input[type="text"] {
         font-family: Arial, sans-serif;
@@ -896,35 +890,6 @@
     </tr>
 
 </tbody></table>
-
-<!-- PDF設置 -->
-<button id="downloadBtn">下載PDF檔案</button>
-
-    <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
-    <script>
-        document.getElementById("downloadBtn").addEventListener("click", function () {
-            const element = document.querySelector("table");
-
-            // 獲取用戶輸入的姓名
-            const userName = document.getElementById("name").value; // 假設姓名輸入框的 id 是 "name"
-
-            // 生成 PDF 文件名
-            const pdfFileName = `${userName}-助聽器保固書.pdf`;
-
-            const pdfOptions = {
-                margin: [10, 10, 10, 10], // 設置頁邊距，單位是毫米，設置為陣列以定義不同的邊距
-                filename: pdfFileName,
-                image: { type: 'jpeg', quality: 0.98 }, // 設置圖片格式和質量
-                html2canvas: { scale: 2, useCORS: true }, // 設置html2canvas的縮放比例和使用CORS
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // 設置jsPDF的單位、頁面格式和方向
-            };
-
-            html2pdf()
-                .from(element)
-                .set(pdfOptions) // 應用設置
-                .save();
-        });
-    </script>
 
 
 <!-- 分公司清單 -->
