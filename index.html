@@ -80,8 +80,7 @@
         <caption align="top"><strong>助聽器保固書</caption>
         <tbody>
             <tr>
-                <th colspan="4">購買民眾資訊</th>
-                <th colspan="4">供應商基本資訊</th>
+                <th colspan="8">購買民眾資訊</th>
             </tr>
             <tr>
                 <td>姓名</td>
@@ -94,12 +93,17 @@
                         <option value="female">女性</option>
                     </select>
                 </td>
-                <td colspan="4">公司行號名稱</td>
+                <td>出生年月日</td>
+                <td><input type="text" class="roc-datepicker"></td>
+                <td>身分證字號</td>
+                <td><input type="text"></td>
             </tr>
             <tr>
-                <td colspan="1">身分證字號</td>
-                <td colspan="3"><input type="text"></td>
-                <td colspan="4">    
+                <th colspan="8">供應商基本資訊</th>
+            </tr>
+            <tr>
+                <td colspan="2">公司行號名稱</td>
+                <td colspan="6">    
                     <select id="companySelect";font-size:13px>
                         <option value="" disabled="" selected=""></option>
                         <option value="宜蘭分公司">元健大和直販事業股份有限公司宜蘭分公司</option>
@@ -128,19 +132,18 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="1">出生年月日</td>
-                <td colspan="3"><input type="text" class="roc-datepicker"></td>
-                <td>統一編號</td>
-                <td><span id="companyTaxID"></span></td>
-                <td>負責人</td>
-                <td>吳少暉</td>
+                <td colspan="2">公司地址</td>
+                <td colspan="6"><span id="companyAddress"></span></td>
             </tr>
             <tr>
-                <td>公司地址</td>
-                <td colspan="5"><span id="companyAddress"></span></td>
+                <td colspan="2">統一編號</td>
+                <td colspan="2"><span id="companyTaxID"></span></td>
+                <td>負責人</td>
+                <td>吳少暉</td>
                 <td>聯絡電話</td>
                 <td><span id="companyPhone"></span></td>
             </tr>
+
             <tr>
                 <th colspan="8">助聽器基本資訊</th>
             </tr>
