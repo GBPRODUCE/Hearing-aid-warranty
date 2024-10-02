@@ -37,13 +37,16 @@
     background: transparent;
   }
 }
-    
+    /* 表格樣式 */
     table {
-        border-collapse: collapse;
-        width: 98%;
-        border: 1px solid black;
         table-layout: fixed;
+        width: 98%;
+        border-collapse: collapse;
+        border: 1px solid black;
         margin: auto;
+        background-color:transparent;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
     }
 
     th, td {
@@ -51,19 +54,9 @@
         padding: 4px;
         text-align: center;
         width: 12.5%;
-        background-color: transparent;
         white-space: pre-wrap;
     }
 
-    th, tr:nth-child(2n) {
-        background-color:transparent;
-    }
-
-    table td {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        white-space: pre-wrap;
-    }
 
 
     select, input[type="date"], input[type="text"] {
