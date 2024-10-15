@@ -9,75 +9,15 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-        
-    <title>助聽器保固書</title>
-<style>
 
-    /* 針對列印媒體的 CSS */
-@media print {
-  /* 隱藏下拉式選單的箭頭 */
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    /* 確保選單還是能顯示文本 */
-    color: inherit;
-    font: inherit;
-  }
-
-  /* 顯示選單文本 */
-  select option {
-    display: block;
-    padding: 8px;
-    /* 設定顏色確保可讀性 */
-    color: black;
-    background: transparent;
-  }
-}
-    /* 表格樣式 */
-    table {
-        table-layout: fixed;
-        width: 98%;
-        border-collapse: collapse;
-        border: 1px solid black;
-        margin: auto;
-        background-color:transparent;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-    }
-
-    th, td {
-        border: 1px solid black;
-        padding: 4px;
-        text-align: center;
-        width: 12.5%;
-        white-space: pre-wrap;
-    }
-
-    h2 {
-            margin: 0;
-            font-size: 1.5em;
-            text-align: center;
-        }
-
-    select, input[type="date"], input[type="text"] {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        border: none;
-        background: transparent;
-        white-space: pre-wrap;
-        outline: none;
-    }
-</style>
-</head>
+        <!-- 引用外部 CSS 文件 -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
     <div>
     <table>
         <h2><strong>助聽器保固書</h2>
-        <tbody>
+         <tbody>
             <tr>
                 <th colspan="8">購買民眾資訊</th>
             </tr>
@@ -941,7 +881,6 @@
 
 <!-- 分公司清單 -->
 <script>
-
     const companySelect = document.getElementById("companySelect");
     const companyAddress = document.getElementById("companyAddress");
     const companyTaxID = document.getElementById("companyTaxID");
@@ -1047,10 +986,7 @@
             companyPhone.textContent = "";
         }
     });
-
 </script>
-
-
 
     <!-- 引用外部 JavaScript 文件 -->
     <script src="logic.js"></script>
@@ -1083,4 +1019,7 @@
                 }
             });
         });
-    </script></body></html>
+    </script>
+    
+    </body>
+    </html>
