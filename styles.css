@@ -1,0 +1,58 @@
+    /* 針對列印媒體的 CSS */
+@media print {
+  /* 隱藏下拉式選單的箭頭 */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    /* 確保選單還是能顯示文本 */
+    color: inherit;
+    font: inherit;
+  }
+
+  /* 顯示選單文本 */
+  select option {
+    display: block;
+    padding: 8px;
+    /* 設定顏色確保可讀性 */
+    color: black;
+    background: transparent;
+  }
+}
+    /* 表格樣式 */
+    table {
+        table-layout: fixed;
+        width: 98%;
+        border-collapse: collapse;
+        border: 1px solid black;
+        margin: auto;
+        background-color:transparent;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 4px;
+        text-align: center;
+        width: 12.5%;
+        white-space: pre-wrap;
+    }
+
+    h2 {
+            margin: 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+    select, input[type="date"], input[type="text"] {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border: none;
+        background: transparent;
+        white-space: pre-wrap;
+        outline: none;
+    }
