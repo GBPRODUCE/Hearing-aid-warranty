@@ -56,3 +56,8 @@
         white-space: pre-wrap;
         outline: none;
     }
+    div.spec-item {
+         margin: 5px 0; /* 每個項目之間增加適當的間距 */
+      font-size: 14px; /* 調整字體大小 */
+      line-height: 1.5; /* 控制行距 */
+    }
