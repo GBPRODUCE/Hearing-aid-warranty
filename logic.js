@@ -599,7 +599,22 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Rbrand.textContent = 
 } else if (selectedValue === "HA RECHARGE B-LI P 5 Z BG") {Rbrand.textContent = "Rexton";RlicenseNumber.textContent = "衛部醫器輸壹字第018657號";RsubsidyType.textContent = "簡易型";RwarrantyPeriod.textContent = "共計3年";RbatterySpec.textContent = "充電式";RdaiInput.textContent = "無";RrequiredSpec.textContent = "□具 4 個可單獨調整壓縮參數 (壓縮閾值、壓縮比)之壓縮頻道，或採用 同等效能之時域(time domain)數位訊號 處理技術 ■多聆聽程式 ■具備至少1種自適應噪音消除 (adaptive noise reduction)功能 ■配戴時可自動消除迴饋音 ■方(指)向性麥克風 □具相容於無線傳輸系統";RotherSpec.textContent = "□自動情境辨識(切換)功能 □雙耳同步功能 ■資料記錄 ■學習(可訓練)功能 □頻率壓縮、搬移 ■遙控裝置相容 □線圈系統相容 ■內建實耳測量功能";
 } else if (selectedValue === "HA RECHARGE B-LI P 5 Z BLK") {Rbrand.textContent = "Rexton";RlicenseNumber.textContent = "衛部醫器輸壹字第018657號";RsubsidyType.textContent = "簡易型";RwarrantyPeriod.textContent = "共計3年";RbatterySpec.textContent = "充電式";RdaiInput.textContent = "無";RrequiredSpec.textContent = "□具 4 個可單獨調整壓縮參數 (壓縮閾值、壓縮比)之壓縮頻道，或採用 同等效能之時域(time domain)數位訊號 處理技術 ■多聆聽程式 ■具備至少1種自適應噪音消除 (adaptive noise reduction)功能 ■配戴時可自動消除迴饋音 ■方(指)向性麥克風 □具相容於無線傳輸系統";RotherSpec.textContent = "□自動情境辨識(切換)功能 □雙耳同步功能 ■資料記錄 ■學習(可訓練)功能 □頻率壓縮、搬移 ■遙控裝置相容 □線圈系統相容 ■內建實耳測量功能";
 } else if (selectedValue === "HA RECHARGE R-LI 5 Z BG") {Rbrand.textContent = "Rexton";RlicenseNumber.textContent = "衛部醫器輸壹字第018657號";RsubsidyType.textContent = "簡易型";RwarrantyPeriod.textContent = "共計3年";RbatterySpec.textContent = "充電式";RdaiInput.textContent = "無";RrequiredSpec.textContent = "□具 4 個可單獨調整壓縮參數 (壓縮閾值、壓縮比)之壓縮頻道，或採用 同等效能之時域(time domain)數位訊號 處理技術 ■多聆聽程式 ■具備至少1種自適應噪音消除 (adaptive noise reduction)功能 ■配戴時可自動消除迴饋音 ■方(指)向性麥克風 □具相容於無線傳輸系統";RotherSpec.textContent = "□自動情境辨識(切換)功能 □雙耳同步功能 ■資料記錄 ■學習(可訓練)功能 □頻率壓縮、搬移 ■遙控裝置相容 □線圈系統相容 ■內建實耳測量功能";
-} else if (selectedValue === "HA RECHARGE R-LI 5 Z BLK") {Rbrand.textContent = "Rexton";RlicenseNumber.textContent = "衛部醫器輸壹字第018657號";RsubsidyType.textContent = "簡易型";RwarrantyPeriod.textContent = "共計3年";RbatterySpec.textContent = "充電式";RdaiInput.textContent = "無";RrequiredSpec.textContent = "□具 4 個可單獨調整壓縮參數 (壓縮閾值、壓縮比)之壓縮頻道，或採用 同等效能之時域(time domain)數位訊號 處理技術 ■多聆聽程式 ■具備至少1種自適應噪音消除 (adaptive noise reduction)功能 ■配戴時可自動消除迴饋音 ■方(指)向性麥克風 □具相容於無線傳輸系統";RotherSpec.textContent = "□自動情境辨識(切換)功能 □雙耳同步功能 ■資料記錄 ■學習(可訓練)功能 □頻率壓縮、搬移 ■遙控裝置相容 □線圈系統相容 ■內建實耳測量功能";
+} else if (selectedValue === "HA RECHARGE R-LI 5 Z BLK") {Rbrand.textContent = "Rexton";RlicenseNumber.textContent = "衛部醫器輸壹字第018657號";RsubsidyType.textContent = "簡易型";RwarrantyPeriod.textContent = "共計3年";RbatterySpec.textContent = "充電式";RdaiInput.textContent = "無";RrequiredSpec.innerHTML = "<div class='spec-item'>□具 4 個可單獨調整壓縮參數 (壓縮閾值、壓縮比) 之壓縮頻道，或採用同等效能之時域 (time domain) 數位訊號處理技術</div>" +
+                          "<div class='spec-item'>■多聆聽程式</div>" +
+                          "<div class='spec-item'>■具備至少1種自適應噪音消除 (adaptive noise reduction) 功能</div>" +
+                          "<div class='spec-item'>■配戴時可自動消除迴饋音</div>" +
+                          "<div class='spec-item'>■方(指)向性麥克風</div>" +
+                          "<div class='spec-item'>□具相容於無線傳輸系統</div>";
+
+RotherSpec.innerHTML = "<div class='spec-item'>□自動情境辨識(切換)功能</div>" +
+                       "<div class='spec-item'>□雙耳同步功能</div>" +
+                       "<div class='spec-item'>■資料記錄</div>" +
+                       "<div class='spec-item'>■學習(可訓練)功能</div>" +
+                       "<div class='spec-item'>□頻率壓縮、搬移</div>" +
+                       "<div class='spec-item'>■遙控裝置相容</div>" +
+                       "<div class='spec-item'>□線圈系統相容</div>" +
+                       "<div class='spec-item'>■內建實耳測量功能</div>";
+
          } else {
             Rbrand.textContent = "";
             RlicenseNumber.textContent = "";
