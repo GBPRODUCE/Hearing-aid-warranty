@@ -998,7 +998,8 @@
                 dateFormat: 'yy/mm/dd',
                 changeMonth: true,
                 changeYear: true,
-                yearRange: '-113:+20',
+                yearRange: '-113:+50',
+                defaultDate: new Date(),         // 預設日期設置為今天
                 beforeShow: function(input, inst) {
                     inst.dpDiv.css({
                         marginTop: -input.offsetHeight + 'px'
