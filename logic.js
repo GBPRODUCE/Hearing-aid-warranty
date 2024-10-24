@@ -300,8 +300,8 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Lbrand.textContent = 
             LwarrantyPeriod.textContent = "";
             LbatterySpec.textContent = "";
             LdaiInput.textContent = "";
-            LrequiredSpec.textContent = "";
-            LotherSpec.textContent = "";
+            LrequiredSpec.textContent = "□具__個可單獨調整壓縮參數(壓縮閾值、壓縮比)之壓縮頻道，或採用同等效能之時域(time domain)數位訊號處理技術 □多聆聽程式 □具備至少1種自適應噪音消除(adaptive noise reduction)功能 □配戴時可自動消除迴饋音 □方(指)向性麥克風 □具相容於無線傳輸系統";
+            LotherSpec.textContent = "□自動情境辨識(切換)功能 □雙耳同步功能 □資料記錄 □學習(可訓練)功能 □頻率壓縮、搬移 □遙控裝置相容 □線圈系統相容 □內建實耳測量功能";
         }
     });
 
@@ -607,7 +607,7 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Rbrand.textContent = 
             RwarrantyPeriod.textContent = "";
             RbatterySpec.textContent = "";
             RdaiInput.textContent = "";
-            RrequiredSpec.textContent = "";
-            RotherSpec.textContent = "";
+            RrequiredSpec.textContent = "□具__個可單獨調整壓縮參數(壓縮閾值、壓縮比)之壓縮頻道，或採用同等效能之時域(time domain)數位訊號處理技術 □多聆聽程式 □具備至少1種自適應噪音消除(adaptive noise reduction)功能 □配戴時可自動消除迴饋音 □方(指)向性麥克風 □具相容於無線傳輸系統";
+            RotherSpec.textContent = "□自動情境辨識(切換)功能 □雙耳同步功能 □資料記錄 □學習(可訓練)功能 □頻率壓縮、搬移 □遙控裝置相容 □線圈系統相容 □內建實耳測量功能";
         }
     });
