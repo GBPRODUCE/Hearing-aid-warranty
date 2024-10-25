@@ -56,3 +56,15 @@
         white-space: pre-wrap;
         outline: none;
     }
+
+    .input-cell {
+        width: 200px; /* 設定表格欄位的寬度 */
+    }
+
+    .input-cell input[type="text"],
+    .input-cell input[type="date"],
+    .input-cell select {
+        width: 100%; /* 輸入框跟隨父容器寬度 */
+        box-sizing: border-box;
+    }
+
