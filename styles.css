@@ -57,14 +57,26 @@
         outline: none;
     }
 
+    /* 設定表格欄位的寬度和內容居中對齊 */
     .input-cell {
-        width: 200px; /* 設定表格欄位的寬度 */
+        width: 200px;               /* 設定表格欄位的固定寬度 */
+        text-align: center;         /* 使表格欄位內容居中 */
+        vertical-align: middle;     /* 垂直居中 */
     }
 
+    /* 設定輸入框的寬度及內容居中對齊 */
     .input-cell input[type="text"],
     .input-cell input[type="date"],
     .input-cell select {
-        width: 100%; /* 輸入框跟隨父容器寬度 */
-        box-sizing: border-box;
+        width: 100%;                /* 使輸入框與表格欄位同寬 */
+        box-sizing: border-box;      /* 包括內距和邊框 */
+        text-align: center;          /* 輸入框內文本水平居中 */
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border: none;
+        background: transparent;
+        white-space: pre-wrap;
+        outline: none;
     }
+
 
