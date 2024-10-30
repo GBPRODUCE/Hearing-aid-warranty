@@ -1001,9 +1001,10 @@
                 yearRange: '-113:+50',
                 defaultDate: new Date(),         // 預設日期設置為今天
                 beforeShow: function(input, inst) {
-                    inst.dpDiv.css({
-                        marginTop: -input.offsetHeight + 'px'
-                    });
+                inst.dpDiv.css({
+                    marginTop: -input.offsetHeight + 'px',  // 調整日曆的垂直位置
+                    marginLeft: -input.offsetWidth + 'px'    // 調整日曆的水平位置
+                });
                 },
                 onSelect: function(dateText) {
                     const [year, month, day] = dateText.split('/');
