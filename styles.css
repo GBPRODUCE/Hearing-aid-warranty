@@ -79,4 +79,21 @@
         outline: none;
     }
 
+        /* 美化滾動條 */
+        ::-webkit-scrollbar {
+            width: 8px; /* 滾動條寬度 */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #E0E0E0; /* 滾動條背景 */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #8E8E8E; /* 滾動條滑塊顏色 */
+            border-radius: 10px; /* 滑塊圓角 */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8E8E8E; /* 滑塊滑過時的顏色 */
+        }
 
