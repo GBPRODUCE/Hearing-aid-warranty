@@ -30,7 +30,7 @@
         border: 1px solid black;
         margin: auto;
         background-color:transparent;
-        font-family: Arial, sans-serif;
+        font-family: 標楷體, sans-serif;
         font-size: 14px;
     }
 
@@ -46,10 +46,11 @@
             margin: 0;
             font-size: 1.5em;
             text-align: center;
+            font-family: 標楷體, sans-serif;
         }
 
     select, input[type="date"], input[type="text"] {
-        font-family: Arial, sans-serif;
+        font-family: 標楷體, sans-serif;
         font-size: 14px;
         border: none;
         background: transparent;
@@ -71,7 +72,7 @@
         width: 100%;                /* 使輸入框與表格欄位同寬 */
         box-sizing: border-box;      /* 包括內距和邊框 */
         text-align: center;          /* 輸入框內文本水平居中 */
-        font-family: Arial, sans-serif;
+        font-family: 標楷體, sans-serif;
         font-size: 14px;
         border: none;
         background: transparent;
