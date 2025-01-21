@@ -1,4 +1,3 @@
-<!-- 左耳HA定義 -->
     const LmodelSelect = document.getElementById("LmodelSelect");
     const Lbrand = document.getElementById("Lbrand");
     const LlicenseNumber = document.getElementById("LlicenseNumber");
@@ -305,7 +304,6 @@ if (selectedValue === "REXTON Cros RIC 8C DGT-DB18CDGT5") {Lbrand.textContent = 
         }
     });
 
-    <!-- 右耳HA定義 -->
     const RmodelSelect = document.getElementById("RmodelSelect");
     const Rbrand = document.getElementById("Rbrand");
     const RlicenseNumber = document.getElementById("RlicenseNumber");
