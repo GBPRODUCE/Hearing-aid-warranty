@@ -1,3 +1,6 @@
+// Google Apps Script Web App URL
+const apiUrl = "https://script.google.com/macros/s/AKfycbzC3TguJGlncU8Ur5L_mRQGLEhn04nz6d2zgty-ZeH2ha-m24bKteueyN9KZR8CEuI/exec"; // 替換為你的 Web App URL
+
     const LmodelSelect = document.getElementById("LmodelSelect");
     const Lbrand = document.getElementById("Lbrand");
     const LlicenseNumber = document.getElementById("LlicenseNumber");
