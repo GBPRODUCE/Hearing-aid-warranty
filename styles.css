@@ -1,103 +1,123 @@
-/* 針對列印媒體的 CSS 規則 */
-@media print {
-  /* 隱藏下拉式選單的箭頭，確保列印時不顯示外觀裝飾 */
-  select {
-    -webkit-appearance: none;    /* 隱藏 WebKit 瀏覽器的預設箭頭 */
-    -moz-appearance: none;       /* 隱藏 Firefox 瀏覽器的預設箭頭 */
-    appearance: none;            /* 隱藏通用預設箭頭 */
-    background: transparent;     /* 設為透明背景 */
-    border: none;                /* 移除邊框 */
-    box-shadow: none;            /* 移除陰影效果 */
-    color: inherit;              /* 繼承文字顏色 */
-    font: inherit;               /* 繼承字體樣式 */
-  }
+    /* 針對列印媒體的 CSS 規則 */
+    @media print {
+      /* 隱藏下拉式選單的箭頭，確保列印時不顯示外觀裝飾 */
+      select {
+        -webkit-appearance: none;    /* 隱藏 WebKit 瀏覽器的預設箭頭 */
+        -moz-appearance: none;       /* 隱藏 Firefox 瀏覽器的預設箭頭 */
+        appearance: none;            /* 隱藏通用預設箭頭 */
+        background: transparent;     /* 設為透明背景 */
+        border: none;                /* 移除邊框 */
+        box-shadow: none;            /* 移除陰影效果 */
+        color: inherit;              /* 繼承文字顏色 */
+        font: inherit;               /* 繼承字體樣式 */
+      }
 
-  /* 顯示選單中的文本內容，方便列印 */
-  select option {
-    display: block;              /* 將選項設定為區塊元素以適應列印 */
-    padding: 8px;                /* 設定內距，提升列印可讀性 */
-    color: black;                /* 設定文字顏色為黑色 */
-    background: transparent;     /* 設定背景透明 */
-  }
-}
+      /* 顯示選單中的文本內容，方便列印 */
+      select option {
+        display: block;              /* 將選項設定為區塊元素以適應列印 */
+        padding: 1px;                /* 設定內距，提升列印可讀性 */
+        color: black;                /* 設定文字顏色為黑色 */
+        background: transparent;     /* 設定背景透明 */
+      }
+    }
 
-/* 表格樣式設定 */
-table {
-  table-layout: fixed;            /* 固定表格佈局，避免自動調整 */
-  width: 100%;                    /* 設定表格寬度為 100% */
-  border-collapse: collapse;      /* 合併表格邊框 */
-  border: 1px solid black;        /* 設定表格外框 */
-  margin: auto;                   /* 將表格置中 */
-  background-color: transparent;  /* 設定背景透明 */
-  font-family: 標楷體, sans-serif; /* 指定字體 */
-  font-size: 14px;                /* 設定字體大小 */
-}
+    /* 表格樣式設定 */
+    table {
+      table-layout: fixed;            /* 固定表格佈局，避免自動調整 */
+      width: 100%;                    /* 設定表格寬度為 100% */
+      border-collapse: collapse;      /* 合併表格邊框 */
+      border: 1px solid black;        /* 設定表格外框 */
+      margin: auto;                   /* 將表格置中 */
+      background-color: transparent;  /* 設定背景透明 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
+      font-size: 14px;                /* 設定字體大小 */
+    }
 
-/* 表格標題與欄位樣式 */
-th, td {
-  border: 1px solid black;        /* 設定欄位邊框 */
-  padding: 4px;                   /* 增加內距提升可讀性 */
-  text-align: center;             /* 文字置中 */
-  width: 12.5%;                   /* 固定欄位寬度為 12.5% */
-  white-space: pre-wrap;          /* 自動換行並保留空白 */
-}
+    /* 表格標題與欄位樣式 */
+    th, td {
+      border: 1px solid black;        /* 設定欄位邊框 */
+      padding: 1.5px;                   /* 增加內距提升可讀性 */
+      text-align: center;             /* 文字置中 */
+      width: 12.5%;                   /* 固定欄位寬度為 12.5% */
+      white-space: pre-wrap;          /* 自動換行並保留空白 */
+    }
 
-/* 標題 h2 樣式設定 */
-h2 {
-  margin: 0;                      /* 移除上下外距 */
-  font-size: 24px;                /* 設定字體大小 */
-  text-align: center;             /* 文字置中 */
-  font-family: 標楷體, sans-serif; /* 指定字體 */
-}
+    /* 標題 h2 樣式設定 */
+    h2 {
+      margin: 0;                      /* 移除上下外距 */
+      font-size: 24px;                /* 設定字體大小 */
+      text-align: center;             /* 文字置中 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
+    }
 
-/* 表單輸入元素的通用樣式 */
-select, 
-input[type="date"], 
-input[type="text"] {
-  font-family: 標楷體, sans-serif; /* 指定字體 */
-  font-size: 14px;                /* 設定字體大小 */
-  border: none;                   /* 移除邊框 */
-  background: transparent;        /* 設定背景透明 */
-  white-space: pre-wrap;          /* 自動換行 */
-  outline: none;                  /* 移除外框 */
-}
+    /* 表單輸入元素的通用樣式 */
+    select, 
+    input[type="date"], 
+    input[type="text"] {
+      width: 90%;                    /* 設定寬度為 100% */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
+      font-size: 13px;                /* 設定字體大小 */
+      border: none;                   /* 移除邊框 */
+      background: transparent;        /* 設定背景透明 */
+      white-space: pre-wrap;          /* 自動換行 */
+      outline: none;                  /* 移除外框 */
+      text-align: center;             /* 文字水平置中 */
+    }
 
-/* 表格欄位的固定寬度與居中對齊 */
-.input-cell {
-  width: 200px;                   /* 設定固定寬度 */
-  text-align: center;             /* 文字水平置中 */
-  vertical-align: middle;         /* 垂直置中 */
-}
+    /* 表格欄位的固定寬度與居中對齊 */
+    .input-cell {
+      width: 100%;                   /* 設定固定寬度 */
+      text-align: center;             /* 文字水平置中 */
+      white-space: pre-wrap;          /* 自動換行並保留空白 */
+    }
 
-/* 輸入框寬度與內容居中對齊 */
-.input-cell input[type="text"], 
-.input-cell input[type="date"], 
-.input-cell select {
-  width: 100%;                    /* 輸入框寬度與欄位相同 */
-  box-sizing: border-box;         /* 包括內距與邊框的計算方式 */
-  text-align: center;             /* 文字水平置中 */
-  font-family: 標楷體, sans-serif; /* 指定字體 */
-  font-size: 14px;                /* 設定字體大小 */
-  border: none;                   /* 移除邊框 */
-  background: transparent;        /* 設定背景透明 */
-  white-space: pre-wrap;          /* 自動換行 */
-  outline: none;                  /* 移除外框 */
-}
+    /* 輸入框寬度與內容完整顯示，並確保自動換行 */
+    .input-cell input[type="text"], 
+    .input-cell input[type="date"], 
+    .input-cell select {
+      width: 100%;                    /* 輸入框寬度與欄位相同 */
+      box-sizing: border-box;         /* 包括內距與邊框的計算方式 */
+      text-align: left;               /* 文字靠左對齊 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
+      font-size: 13px;                /* 設定字體大小 */
+      border: none;                   /* 移除邊框 */
+      background: transparent;        /* 設定背景透明 */
+      white-space: pre-wrap;          /* 自動換行並保留空白 */
+      word-wrap: break-word;          /* 長單字在邊界處換行 */
+      overflow: visible;              /* 確保內容完全顯示 */
+      outline: none;                  /* 移除外框 */
+      resize: none;                   /* 禁用用戶調整大小 */
+    }
+    textarea {
+      width: 100%;                    /* 寬度與表格單元格一致 */
+      height: 100%;                   /* 高度填滿表格單元格 */
+      border: none;                   /* 移除外框 */
+      outline: none;                  /* 移除聚焦時的外框 */
+      resize: none;                   /* 禁止調整大小 */
+      background: transparent;        /* 背景透明，與表格背景一致 */
+      box-sizing: border-box;         /* 包括內距與邊框的計算 */
+      font-family: 標楷體, sans-serif; /* 字體樣式與表格一致 */
+      font-size: 13px;                /* 字體大小 */
+      white-space: pre-wrap;          /* 自動換行並保留空白 */
+      overflow: hidden;               /* 隱藏滾動條 */
+    }
 
-/* 美化滾動條樣式 */
-::-webkit-scrollbar {
-  width: 8px;                     /* 設定滾動條寬度 */
-}
 
-::-webkit-scrollbar-track {
-  background: #E0E0E0;            /* 設定滾動條背景顏色 */
-}
 
-::-webkit-scrollbar-thumb {
-  background: #8E8E8E;            /* 設定滑塊顏色 */
-  border-radius: 10px;            /* 設定滑塊圓角 */
-}
+    /* 美化滾動條樣式 */
+    ::-webkit-scrollbar {
+      width: 8px;                     /* 設定滾動條寬度 */
+    }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #8E8E8E;            /* 滑鼠懸停時滑塊顏色 */
-}
+    ::-webkit-scrollbar-track {
+      background: #E0E0E0;            /* 設定滾動條背景顏色 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #8E8E8E;            /* 設定滑塊顏色 */
+      border-radius: 10px;            /* 設定滑塊圓角 */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8E8E8E;            /* 滑鼠懸停時滑塊顏色 */
+    }
