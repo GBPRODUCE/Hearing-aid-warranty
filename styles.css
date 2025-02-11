@@ -1,5 +1,5 @@
-    /* 針對列印媒體的 CSS 規則 */
-    @media print {
+/* 針對列印媒體的 CSS 規則 */
+   @media print {
       /* 隱藏下拉式選單的箭頭，確保列印時不顯示外觀裝飾 */
       select {
         -webkit-appearance: none;    /* 隱藏 WebKit 瀏覽器的預設箭頭 */
@@ -21,12 +21,14 @@
       }
     }
 
+    body{
+        font-family: 標楷體, sans-serif; /* 指定字體 */
+    }
     /* 標題 h2 樣式設定 */
     h2 {
-      margin: 0;                      /* 移除上下外距 */
-      font-size: 24px;                /* 設定字體大小 */
-      text-align: center;             /* 文字置中 */
-      font-family: 標楷體, sans-serif; /* 指定字體 */
+        margin: 0;                      /* 移除上下外距 */
+        font-size: 20px;                /* 設定字體大小 */
+        text-align: center;             /* 文字置中 */
     }
 
     /* 表格樣式設定 */
@@ -37,7 +39,6 @@
       border: 1px solid black;        /* 設定表格外框 */
       margin: auto;                   /* 將表格置中 */
       background-color: transparent;  /* 設定背景透明 */
-      font-family: 標楷體, sans-serif; /* 指定字體 */
       font-size: 14px;                /* 設定字體大小 */
     }
 
@@ -54,8 +55,7 @@
     select, 
     input[type="date"], 
     input[type="text"] {
-      width: 90%;                    /* 設定寬度為 100% */
-      font-family: 標楷體, sans-serif; /* 指定字體 */
+      width: 95%;                    /* 設定寬度為 95% */
       font-size: 13px;                /* 設定字體大小 */
       border: none;                   /* 移除邊框 */
       background: transparent;        /* 設定背景透明 */
@@ -79,7 +79,6 @@
       width: 100%;                    /* 輸入框寬度與欄位相同 */
       box-sizing: border-box;         /* 包括內距與邊框的計算方式 */
       text-align: left;               /* 文字靠左對齊 */
-      font-family: 標楷體, sans-serif; /* 指定字體 */
       font-size: 13px;                /* 設定字體大小 */
       border: none;                   /* 移除邊框 */
       background: transparent;        /* 設定背景透明 */
@@ -97,29 +96,23 @@
       resize: none;                   /* 禁止調整大小 */
       background: transparent;        /* 背景透明，與表格背景一致 */
       box-sizing: border-box;         /* 包括內距與邊框的計算 */
-      font-family: 標楷體, sans-serif; /* 字體樣式與表格一致 */
       font-size: 13px;                /* 字體大小 */
       white-space: pre-wrap;          /* 自動換行並保留空白 */
       overflow: hidden;               /* 隱藏滾動條 */
       color: black;                /* 設定文字顏色為黑色 */
     }
 
-
-
     /* 美化滾動條樣式 */
     ::-webkit-scrollbar {
       width: 8px;                     /* 設定滾動條寬度 */
     }
-
     ::-webkit-scrollbar-track {
       background: #E0E0E0;            /* 設定滾動條背景顏色 */
     }
-
     ::-webkit-scrollbar-thumb {
       background: #8E8E8E;            /* 設定滑塊顏色 */
-      border-radius: 10px;            /* 設定滑塊圓角 */
+      border-radius: 8px;            /* 設定滑塊圓角 */
     }
-
     ::-webkit-scrollbar-thumb:hover {
       background: #8E8E8E;            /* 滑鼠懸停時滑塊顏色 */
     }
