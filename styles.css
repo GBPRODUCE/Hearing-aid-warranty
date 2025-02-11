@@ -57,6 +57,7 @@
     input[type="text"] {
       width: 95%;                    /* 設定寬度為 95% */
       font-size: 13px;                /* 設定字體大小 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
       border: none;                   /* 移除邊框 */
       background: transparent;        /* 設定背景透明 */
       white-space: pre-wrap;          /* 自動換行 */
@@ -70,6 +71,7 @@
       width: 100%;                   /* 設定固定寬度 */
       text-align: center;             /* 文字水平置中 */
       white-space: pre-wrap;          /* 自動換行並保留空白 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
     }
 
     /* 輸入框寬度與內容完整顯示，並確保自動換行 */
@@ -78,6 +80,7 @@
     .input-cell select {
       width: 100%;                    /* 輸入框寬度與欄位相同 */
       box-sizing: border-box;         /* 包括內距與邊框的計算方式 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
       text-align: left;               /* 文字靠左對齊 */
       font-size: 13px;                /* 設定字體大小 */
       border: none;                   /* 移除邊框 */
@@ -91,6 +94,7 @@
     textarea {
       width: 100%;                    /* 寬度與表格單元格一致 */
       height: 100%;                   /* 高度填滿表格單元格 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
       border: none;                   /* 移除外框 */
       outline: none;                  /* 移除聚焦時的外框 */
       resize: none;                   /* 禁止調整大小 */
