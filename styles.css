@@ -21,6 +21,14 @@
       }
     }
 
+    /* 標題 h2 樣式設定 */
+    h2 {
+      margin: 0;                      /* 移除上下外距 */
+      font-size: 24px;                /* 設定字體大小 */
+      text-align: center;             /* 文字置中 */
+      font-family: 標楷體, sans-serif; /* 指定字體 */
+    }
+
     /* 表格樣式設定 */
     table {
       table-layout: fixed;            /* 固定表格佈局，避免自動調整 */
@@ -42,14 +50,6 @@
       white-space: pre-wrap;          /* 自動換行並保留空白 */
     }
 
-    /* 標題 h2 樣式設定 */
-    h2 {
-      margin: 0;                      /* 移除上下外距 */
-      font-size: 24px;                /* 設定字體大小 */
-      text-align: center;             /* 文字置中 */
-      font-family: 標楷體, sans-serif; /* 指定字體 */
-    }
-
     /* 表單輸入元素的通用樣式 */
     select, 
     input[type="date"], 
@@ -62,6 +62,7 @@
       white-space: pre-wrap;          /* 自動換行 */
       outline: none;                  /* 移除外框 */
       text-align: center;             /* 文字水平置中 */
+      color: black;                /* 設定文字顏色為黑色 */
     }
 
     /* 表格欄位的固定寬度與居中對齊 */
@@ -100,6 +101,7 @@
       font-size: 13px;                /* 字體大小 */
       white-space: pre-wrap;          /* 自動換行並保留空白 */
       overflow: hidden;               /* 隱藏滾動條 */
+      color: black;                /* 設定文字顏色為黑色 */
     }
 
 
