@@ -45,10 +45,9 @@
     /* 表格標題與欄位樣式 */
     th, td {
       border: 1px solid black;        /* 設定欄位邊框 */
-      padding: 1.5px;                   /* 增加內距提升可讀性 */
+      padding: 4.5px;                   /* 增加內距提升可讀性 */
       text-align: center;             /* 文字置中 */
       width: 12.5%;                   /* 固定欄位寬度為 12.5% */
-      white-space: pre-wrap;          /* 自動換行並保留空白 */
     }
 
     /* 表單輸入元素的通用樣式 */
