@@ -1,5 +1,5 @@
 // 左耳與右耳資料 API URL
-const apiUrl = "https://script.google.com/macros/s/AKfycbw5Cxk_KfOQaiVFvX0Ui7GCK29sYLc2py2k3WG3fhAlOkLPDVqfatDKAw879VrYLrBt/exec";
+const apiUrl = "https://script.google.com/macros/s/AKfycby2NBw3p9N1biJ_vb2TS66htp8oAnh_poS4ncGGncV5pT3bHj7_HiIjtzzafL7itI0_/exec";
 
 // DOM 元素
 const LmodelSelect = document.getElementById("LmodelSelect");
